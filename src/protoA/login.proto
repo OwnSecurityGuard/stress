@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package main;
+option go_package = "protoA/";
+
+message LoginReq {
+  string name = 1;
+  string password = 2;
+  repeated TestItem c =3;
+  repeated int32 d =4 ;
+}
+
+message LoginResp {
+  string greet = 1;
+}
+
+
+message SayHelloReq{
+  string name = 1;
+}
+
+message SayHelloResp{
+  string name = 1;
+}
+
+message TestItem{
+  string A = 1;
+}
